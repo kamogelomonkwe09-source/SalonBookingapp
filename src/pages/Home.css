@@ -1,0 +1,483 @@
+
+.marketplace-home {
+  --pink: #b85c80;
+  --dark-pink: #934364;
+  --light-pink: #f9e7ee;
+  --cream: #fffaf5;
+  --gold: #c5a059;
+  --dark: #392631;
+  --muted: #806c76;
+
+  width: 100%;
+  background: var(--cream);
+  color: var(--dark);
+  font-family: Arial, sans-serif;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.marketplace-home * {
+  box-sizing: border-box;
+}
+
+.marketplace-home a {
+  text-decoration: none;
+}
+
+.marketplace-home button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Navigation Bar */
+
+.home-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  padding: 22px 6%;
+  background: white;
+  border-bottom: 1px solid #f0dce4;
+}
+
+.home-logo {
+  font-family: Georgia, serif;
+  font-size: 27px;
+  font-weight: bold;
+  color: var(--dark);
+}
+
+.home-logo span {
+  color: var(--pink);
+}
+
+.home-nav-links {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.home-nav-links a {
+  color: var(--dark);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.home-nav-links a:hover {
+  color: var(--pink);
+}
+
+/* Buttons */
+
+.marketplace-home .primary-btn,
+.marketplace-home .outline-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 25px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.marketplace-home .primary-btn {
+  background: var(--pink);
+  color: white;
+  border: 1px solid var(--pink);
+}
+
+.marketplace-home .primary-btn:hover {
+  background: var(--dark-pink);
+  transform: translateY(-2px);
+}
+
+.marketplace-home .outline-btn {
+  background: transparent;
+  color: var(--dark-pink);
+  border: 1px solid var(--pink);
+}
+
+.marketplace-home .outline-btn:hover {
+  background: var(--light-pink);
+}
+
+/* Hero Section */
+
+.home-hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  gap: 50px;
+  min-height: 580px;
+  padding: 80px 8%;
+  background: linear-gradient(
+    120deg,
+    #fffaf5,
+    #f8e2eb
+  );
+}
+
+.home-eyebrow {
+  color: var(--dark-pink);
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 16px;
+}
+
+.home-hero h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(40px, 5vw, 68px);
+  line-height: 1.15;
+  margin: 20px 0;
+  color: var(--dark);
+}
+
+.home-hero h1 span {
+  color: var(--pink);
+}
+
+.home-hero-description {
+  max-width: 550px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.home-hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.home-trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* Hero Decoration */
+
+.home-hero-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.beauty-circle {
+  width: 360px;
+  max-width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: linear-gradient(
+    145deg,
+    #eec5d6,
+    #f9e7ee
+  );
+  border: 2px solid var(--gold);
+  outline: 12px solid #ffffff60;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 20px 60px #b85c8020;
+}
+
+.beauty-flower {
+  font-size: 85px;
+  color: var(--pink);
+  line-height: 1;
+}
+
+.beauty-circle h2 {
+  font-family: Georgia, serif;
+  font-size: 32px;
+  line-height: 1.3;
+  margin: 15px 0;
+}
+
+.beauty-circle p {
+  color: var(--dark-pink);
+  letter-spacing: 2px;
+}
+
+/* General Sections */
+
+.home-section,
+.home-salons-section {
+  padding: 80px 8%;
+}
+
+.home-section-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.home-section-heading h2,
+.home-owner-section h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(30px, 4vw, 42px);
+  margin: 10px 0;
+}
+
+.home-section-heading > p:last-child {
+  color: var(--muted);
+}
+
+/* Beauty Service Cards */
+
+.home-service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.home-service-card {
+  padding: 30px;
+  background: white;
+  border: 1px solid #f0dce4;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px #39263108;
+  transition: 0.3s;
+}
+
+.home-service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px #b85c801a;
+}
+
+.home-service-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  border-radius: 16px;
+  background: var(--light-pink);
+  font-size: 30px;
+}
+
+.home-service-card h3 {
+  margin: 18px 0 8px;
+  font-size: 21px;
+}
+
+.home-service-card p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.home-service-card a {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--dark-pink);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.home-service-card a:hover {
+  text-decoration: underline;
+}
+
+/* Approved Salon Directory */
+
+.home-salons-section {
+  background: #f9edf1;
+}
+
+.home-empty-state {
+  max-width: 700px;
+  margin: auto;
+  padding: 45px 25px;
+  background: white;
+  border: 1px dashed #d8a5b9;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.home-empty-state .home-service-icon {
+  margin: auto;
+}
+
+.home-empty-state p {
+  color: var(--muted);
+  max-width: 480px;
+  margin: 15px auto 25px;
+}
+
+/* How It Works Section */
+
+.home-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+.home-step {
+  text-align: center;
+  padding: 25px;
+}
+
+.step-number {
+  width: 75px;
+  height: 75px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 20px;
+  background: var(--light-pink);
+  color: var(--dark-pink);
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  font-family: Georgia, serif;
+  font-size: 28px;
+}
+
+.home-step h3 {
+  font-size: 23px;
+}
+
+.home-step p {
+  color: var(--muted);
+}
+
+/* Salon Owner Registration Section */
+
+.home-owner-section {
+  text-align: center;
+  padding: 75px 8%;
+  background: linear-gradient(
+    120deg,
+    #f5d9e5,
+    #fff1e3
+  );
+}
+
+.home-owner-section > p:not(.home-eyebrow) {
+  max-width: 650px;
+  margin: 20px auto 30px;
+  color: var(--muted);
+}
+
+/* Footer */
+
+.home-footer {
+  background: #392631;
+  color: white;
+  padding: 45px 8% 20px;
+}
+
+.home-footer h2 {
+  font-family: Georgia, serif;
+  color: #f1c3d5;
+}
+
+.home-footer p {
+  color: #d9c6cf;
+  font-size: 14px;
+}
+
+.home-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 25px 0;
+}
+
+.home-footer-links a,
+.home-footer-links button {
+  color: white;
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-size: 14px;
+}
+
+.home-footer-links a:hover,
+.home-footer-links button:hover {
+  color: #f1c3d5;
+}
+
+.home-copyright {
+  border-top: 1px solid #ffffff25;
+  padding-top: 20px;
+  text-align: center;
+}
+
+/* Tablet Responsive Design */
+
+@media (max-width: 1000px) {
+  .home-navbar {
+    flex-wrap: wrap;
+  }
+
+  .home-nav-links {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .home-hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .home-hero-description {
+    margin: auto;
+  }
+
+  .home-hero-buttons,
+  .home-trust {
+    justify-content: center;
+  }
+
+  .home-service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile Responsive Design */
+
+@media (max-width: 600px) {
+  .home-navbar {
+    justify-content: center;
+  }
+
+  .home-nav-links {
+    justify-content: center;
+  }
+
+  .home-hero {
+    padding: 50px 6%;
+  }
+
+  .beauty-circle {
+    width: 260px;
+  }
+
+  .beauty-circle h2 {
+    font-size: 25px;
+  }
+
+  .beauty-flower {
+    font-size: 60px;
+  }
+
+  .home-service-grid,
+  .home-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .home-section,
+  .home-salons-section {
+    padding: 50px 6%;
+  }
+
+  .home-hero-buttons {
+    flex-direction: column;
+  }
+}
