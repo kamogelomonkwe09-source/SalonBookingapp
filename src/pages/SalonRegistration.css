@@ -1,0 +1,196 @@
+
+.registration-page {
+  min-height: 100vh;
+  padding: 65px 20px;
+  background: linear-gradient(
+    135deg,
+    #fffaf5,
+    #f8dfe6
+  );
+}
+
+.registration-card {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 45px;
+  background: white;
+  border-radius: 22px;
+  box-shadow: 0 15px 45px rgba(90, 45, 55, 0.09);
+}
+
+.registration-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.registration-eyebrow {
+  color: #b89146;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.registration-heading h1,
+.status-card h1 {
+  font-family: Georgia, serif;
+  color: #392c30;
+  font-size: 38px;
+}
+
+.registration-heading p {
+  color: #786b6e;
+  line-height: 1.7;
+}
+
+.registration-card h2 {
+  margin-top: 35px;
+  margin-bottom: 20px;
+  font-family: Georgia, serif;
+  font-size: 23px;
+  color: #b76e79;
+  border-bottom: 1px solid #f3e5e8;
+  padding-bottom: 12px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.registration-card label {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #392c30;
+}
+
+.registration-card input,
+.registration-card textarea {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #e6d5d8;
+  border-radius: 10px;
+  background: #fffdfb;
+  color: #392c30;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.registration-card input:focus,
+.registration-card textarea:focus {
+  outline: 2px solid #dba8b4;
+  border-color: #b76e79;
+}
+
+.form-help {
+  color: #786b6e;
+  font-size: 14px;
+}
+
+.service-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr auto;
+  align-items: center;
+  gap: 15px;
+}
+
+.add-service-btn {
+  border: 1px solid #b76e79;
+  background: white;
+  color: #965561;
+  border-radius: 10px;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.remove-btn {
+  background: #fff0f2;
+  color: #9b3447;
+  border: 0;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.approval-notice {
+  margin: 30px 0;
+  padding: 20px;
+  background: #fff8e8;
+  border-left: 4px solid #b89146;
+  border-radius: 8px;
+  color: #604e2f;
+}
+
+.approval-notice p {
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 16px;
+  background: #b76e79;
+  color: white;
+  border: 0;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #965561;
+}
+
+.form-error {
+  color: #a32640;
+  font-weight: bold;
+}
+
+.status-card {
+  max-width: 600px;
+  text-align: center;
+}
+
+.status-card h1 {
+  font-size: 30px;
+}
+
+.status-card p {
+  line-height: 1.8;
+  color: #786b6e;
+}
+
+.status-icon {
+  font-size: 45px;
+  color: #b89146;
+}
+
+.status-pill {
+  display: inline-block;
+  padding: 9px 18px;
+  background: #fff0d5;
+  color: #785514;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+@media (max-width: 650px) {
+  .registration-card {
+    padding: 25px 18px;
+  }
+
+  .form-grid,
+  .service-row {
+    grid-template-columns: 1fr;
+  }
+
+  .registration-heading h1 {
+    font-size: 30px;
+  }
+}
